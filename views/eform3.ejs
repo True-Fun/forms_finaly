@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Write a comment from Andrey Trufanov</title>
+    <link rel="stylesheet" href="/form/style3.css">
+</head>
+
+<body>
+    <h1 title="Comments">User Comments</h1>
+    <div class="content">
+            <div class="three_content">
+                <div class="form1">
+                    <form action="form1" target="_self">
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+
+                <div class="form3">
+                    <form action="form2" target="_self">
+                        <button>Write Comment</button>
+                    </form>
+                </div>
+                <div class="butupdate">
+                    <button value="Refresh Page" onClick="window.location.reload();">Update Page</button>
+                </div>
+            </div>
+        <form action="" method="post" name="form3"></form>
+        <% for(var i=0;i < dataRes.length;i++) {%>
+            <div class="commment">
+                <div class="field">
+                    <div class="span1">
+
+                        <div class="avatar"> <img src="/form2/<%= dataRes[i].avatar %>" width="150px" height="150px" alt="photo"></div>
+                            <center><span class="nickname"><%= dataRes[i].login %></span></center>
+                    </div>
+                        
+                            <div class="span2">
+                                <div class="header"><%= dataRes[i].header %></div>
+                                <div class="comtext"><%= dataRes[i].text %></div>
+                            </div>
+                </div>
+            </div>
+ <% } %>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

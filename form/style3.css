@@ -1,0 +1,54 @@
+body {
+	font-family: Roboto;
+	background: #e0a96d;
+}
+h1 {
+	padding: 10px;
+	text-align: center;
+	margin: 0;	
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #322514;
+}
+button {
+	cursor: pointer;
+	width: 380px;
+	padding: 10px;
+	height: 40px;
+	color: #fff;
+	background: #322514;
+	text-transform: uppercase;
+	font-size: 18px;
+	border: none;
+    border-radius: 20px/20px;
+	
+}
+.three_content {
+	margin: 30px 30px;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+.comment {
+    position: absolute;
+    margin:30px, 30px;
+    padding-top: 70px;
+}
+.field {
+    display: flex;
+    width:100%;
+}
+.span1{
+    padding-top:25px;
+    padding-left:40px;
+    width:auto;
+}
+.span2 {
+    padding-top:25px;
+    padding-left:15px;
+    width:auto;
+}
+.header {
+	text-align: center;
+}
